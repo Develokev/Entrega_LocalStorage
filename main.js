@@ -21,14 +21,14 @@ console.log(productos);
 const cosasAPintar = [
   {
       id: 1,
-      producto: "pera",
+      producto: "Mango",
   }
 ]
 
 const arrayProductos = [
   {
       id: 1,
-      producto: "pera",
+      producto: "Mango",
   }
 ]
 
@@ -36,25 +36,26 @@ const arrayProductos = [
 
 botonC.addEventListener('click', borrarLocal()); /*Evento click que acciona la función "borrarLocal", que hace un 'clear' al Local Storage*/
 
-// document.addEventListener('click',(ev)) => {
+// document.addEventListener('click',(anadirLocal())) => {
 
 //   if (ev.target.matches('add')) {
 //       const elemento = ev.target.parentElement.parentElement.children[0].id
-//       anadirAlLocal(elemento);
+//       anadirLocal(elemento);
 //   }
 // }
 
-//   const anadirAlLocal () => {
-//       localStorage.setItem("anadir",JSON.stringify(anadir));
-//       localStorage.push(anadir);
-//   }
-
-
 //FUNCIONES ++++++++++++++++++++++++++++++++++++++++++++++++++
-function borrarLocal() {
+
+function borrarPro() {
     localStorage.clear();
 }
 
-// const borrarTodo => () {
+function anadirPro() {
 
-// }
+}
+
+function anadirLocal () {
+    localStorage.setItem("anadir",JSON.stringify(anadir)); // Se puede usar también toString(anadir)
+    localStorage.push(anadir);
+}
+
